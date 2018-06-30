@@ -1,0 +1,33 @@
+﻿<Window x:Name="Login" x:Class="boutique_first.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:boutique_first"
+        mc:Ignorable="d"
+        Title="Belezaville Boutique" Height="267.858" Width="387.428">
+    <Grid Margin="16,27,0,-2" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Width="360">
+        <Grid.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform/>
+                <RotateTransform Angle="-0.012"/>
+                <TranslateTransform/>
+            </TransformGroup>
+        </Grid.RenderTransform>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="326*"/>
+            <ColumnDefinition Width="14*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btnEntrar" Content="Entrar" HorizontalAlignment="Left" Margin="148,136,0,0" VerticalAlignment="Top" Width="74" Grid.Column="1" Click="btnEntrar_Click"/>
+        <TextBox x:Name="txbUsuario" HorizontalAlignment="Left" Height="23" Margin="148,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <TextBox x:Name="txbSenha" HorizontalAlignment="Left" Height="22" Margin="148,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <Label x:Name="lblUsuario" Content="Usuario:" HorizontalAlignment="Left" Margin="59,40,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label x:Name="lblSenha" Content="Senha:" HorizontalAlignment="Left" Margin="59,80,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,66 @@
+﻿<Window x:Name="ClienteCadastro" x:Class="boutique_first.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:boutique_first"
+        mc:Ignorable="d"
+        Title="Cadastro de Cliente" Height="632.35" Width="1205.225" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid x:Name="ClienteCadastro1" Margin="0,0,4,-1">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="57*"/>
+            <RowDefinition Height="245*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Cancelar" HorizontalAlignment="Left" Margin="529,430,0,0" VerticalAlignment="Top" Width="210" Height="50" Background="#FF57293E" FontFamily="Corbel" FontSize="18" BorderBrush="#FF57293E" Foreground="White" Click="Button_Click" Grid.Row="1"/>
+        <Button Content="Cadastrar" HorizontalAlignment="Left" Margin="232,430,0,0" VerticalAlignment="Top" Width="208" Height="50" Background="#FF57293E" FontFamily="Corbel" FontSize="18" BorderBrush="#FF57293E" Foreground="White" Click="Button_Click_1" Grid.Row="1"/>
+        <Rectangle Fill="#FF57293E" Stroke="Black" Margin="0,0,0,24"/>
+        <Label Content="Cadastro de Cliente" HorizontalAlignment="Left" Margin="529,38,0,0" VerticalAlignment="Top" Width="117"/>
+        <Label x:Name="LblNome" Content="Nome Cliente:" HorizontalAlignment="Left" Margin="40,43,0,0" VerticalAlignment="Top" Width="86" Grid.Row="1" FontFamily="Corbel" FontSize="18"/>
+        <TextBox x:Name="TxbNomeCliente" HorizontalAlignment="Left" Height="23" Margin="124,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="470" TextChanged="TxbNomeCliente_TextChanged" Grid.Row="1" FontFamily="Corbel" FontSize="18"/>
+        <Label x:Name="LblNomeMae" Content="Nome Mãe:" HorizontalAlignment="Left" Margin="620,44,0,0" VerticalAlignment="Top" Width="86" Grid.Row="1" FontFamily="Corbel" FontSize="18"/>
+        <TextBox x:Name="TxbNomeMae" HorizontalAlignment="Left" Height="23" Margin="704,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="470" Grid.Row="1" FontFamily="Corbel" FontSize="18"/>
+        <Label x:Name="LblLagradouro" Content="Lagradouro:" HorizontalAlignment="Left" Margin="42,204,0,0" VerticalAlignment="Top" Width="86" Grid.Row="1" FontFamily="Corbel" FontSize="18"/>
+        <TextBox x:Name="TxbLagradouro" HorizontalAlignment="Left" Height="24" Margin="126,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="254" Grid.Row="1" FontFamily="Corbel" FontSize="18"/>
+        <Label x:Name="LblNumCasa" Content="Numero Casa:" HorizontalAlignment="Left" Margin="428,205,0,0" VerticalAlignment="Top" Width="86" Grid.Row="1" FontFamily="Corbel" FontSize="18"/>
+        <TextBox x:Name="TxbNumeroCasa" HorizontalAlignment="Left" Height="23" Margin="512,208,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Row="1" FontFamily="Corbel" FontSize="18"/>
+        <Label x:Name="LblCPF" Content="CPF:" HorizontalAlignment="Left" Margin="354,92,0,0" VerticalAlignment="Top" Width="86" Grid.Row="1" FontFamily="Corbel" FontSize="18"/>
+        <TextBox x:Name="TxbCpf" HorizontalAlignment="Left" Height="23" Margin="438,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Row="1" FontFamily="Corbel" FontSize="18"/>
+        <Label x:Name="LblRG" Content="RG:" HorizontalAlignment="Left" Margin="620,93,0,0" VerticalAlignment="Top" Width="86" Grid.Row="1" FontFamily="Corbel" FontSize="18"/>
+        <TextBox x:Name="TxbRG" HorizontalAlignment="Left" Height="23" Margin="704,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Row="1" FontFamily="Corbel" FontSize="18"/>
+        <Label x:Name="LblNomeMae_Copy" Content="Observações:" HorizontalAlignment="Left" Margin="40,299,0,0" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.488,0.538" Grid.Row="1" FontFamily="Corbel" FontSize="18"/>
+        <DatePicker x:Name="DataNasc" HorizontalAlignment="Left" Margin="150,96,0,0" VerticalAlignment="Top" Grid.Row="1" FontFamily="Corbel" FontSize="18"/>
+        <Label x:Name="LblNascimento" Content="Nascimento:" HorizontalAlignment="Left" Margin="64,96,0,0" VerticalAlignment="Top" Width="86" Grid.Row="1" FontFamily="Corbel" FontSize="18"/>
+        <Label x:Name="LblRG_Copy" Content="Telefone:" HorizontalAlignment="Left" Margin="270,144,0,0" VerticalAlignment="Top" Width="86" Grid.Row="1" FontFamily="Corbel" FontSize="18"/>
+        <TextBox x:Name="TxbTelefone1" HorizontalAlignment="Left" Height="22" Margin="334,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.475,0.477" Grid.Row="1" FontFamily="Corbel" FontSize="18"/>
+        <Label x:Name="LblRG_Copy1" Content="Tipo Telefone:" HorizontalAlignment="Left" Margin="42,144,0,0" VerticalAlignment="Top" Width="86" Grid.Row="1" FontFamily="Corbel" FontSize="18"/>
+        <ComboBox x:Name="TxbTipoTel1" HorizontalAlignment="Left" Margin="133,148,0,0" VerticalAlignment="Top" Width="120" Grid.Row="1" FontFamily="Corbel" FontSize="18">
+            <ComboBoxItem Content="Residêncial" HorizontalAlignment="Left" Width="118" Selected="ComboBoxItem_Selected"/>
+            <ComboBoxItem Content="Celular" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="Recado" HorizontalAlignment="Left" Width="118"/>
+        </ComboBox>
+        <Label x:Name="LblRG_Copy2" Content="Telefone:" HorizontalAlignment="Left" Margin="692,144,0,0" VerticalAlignment="Top" Width="86" Grid.Row="1" FontFamily="Corbel" FontSize="18"/>
+        <TextBox x:Name="TxbTelefone2" HorizontalAlignment="Left" Height="22" Margin="776,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Row="1" FontFamily="Corbel" FontSize="18"/>
+        <Label x:Name="LblRG_Copy3" Content="Tipo Telefone:" HorizontalAlignment="Left" Margin="477,144,0,0" VerticalAlignment="Top" Width="86" Grid.Row="1" FontFamily="Corbel" FontSize="18"/>
+        <ComboBox x:Name="TxbTipoTel2" HorizontalAlignment="Left" Margin="568,148,0,0" VerticalAlignment="Top" Width="120" Grid.Row="1" FontFamily="Corbel" FontSize="18">
+            <ComboBoxItem Content="Residêncial" HorizontalAlignment="Left" Width="118" Selected="ComboBoxItem_Selected"/>
+            <ComboBoxItem Content="Celular" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="Recado" HorizontalAlignment="Left" Width="118"/>
+        </ComboBox>
+        <Label x:Name="LblNumCasa_Copy1" Content="Complemento:" HorizontalAlignment="Left" Margin="692,203,0,0" VerticalAlignment="Top" Width="86" Grid.Row="1" FontFamily="Corbel" FontSize="18"/>
+        <TextBox x:Name="TxbComplemento" HorizontalAlignment="Left" Height="23" Margin="776,206,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Grid.Row="1" FontFamily="Corbel" FontSize="18"/>
+        <Label x:Name="LblNumCasa_Copy2" Content="CEP:" HorizontalAlignment="Left" Margin="40,244,0,0" VerticalAlignment="Top" Width="86" Grid.Row="1" FontFamily="Corbel" FontSize="18"/>
+        <TextBox x:Name="TxbCEP" HorizontalAlignment="Left" Height="23" Margin="124,247,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Row="1" FontFamily="Corbel" FontSize="18"/>
+        <Label x:Name="LblNumCasa_Copy3" Content="Bairro:" HorizontalAlignment="Left" Margin="308,244,0,0" VerticalAlignment="Top" Width="86" Grid.Row="1" FontFamily="Corbel" FontSize="18"/>
+        <TextBox x:Name="TxbBairro" HorizontalAlignment="Left" Height="23" Margin="392,247,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Row="1" FontFamily="Corbel" FontSize="18"/>
+        <Label x:Name="LblNumCasa_Copy4" Content="Cidade:" HorizontalAlignment="Left" Margin="536,241,0,0" VerticalAlignment="Top" Width="86" Grid.Row="1" FontFamily="Corbel" FontSize="18"/>
+        <TextBox x:Name="TxbCidade" HorizontalAlignment="Left" Height="23" Margin="620,0,0,223" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="120" Grid.Row="1" FontFamily="Corbel" FontSize="18"/>
+        <Label x:Name="LblNumCasa_Copy5" Content="Estado:" HorizontalAlignment="Left" Margin="764,241,0,0" VerticalAlignment="Top" Width="86" Grid.Row="1" FontFamily="Corbel" FontSize="18"/>
+        <TextBox x:Name="TxbEstado" HorizontalAlignment="Left" Height="23" Margin="848,244,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Row="1" FontFamily="Corbel" FontSize="18"/>
+        <TextBox x:Name="TxtObservacoes" HorizontalAlignment="Left" Height="101" Margin="150,299,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="794"/>
+
+
+    </Grid>
+</Window>
